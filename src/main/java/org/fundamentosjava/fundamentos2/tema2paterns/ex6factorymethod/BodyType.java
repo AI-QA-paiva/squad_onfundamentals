@@ -1,9 +1,8 @@
 package org.fundamentosjava.fundamentos2.tema2paterns.ex6factorymethod;
 
-public enum CarModelEnum {
+public enum BodyType {
 
     SEDAN,
-    HACTH,
-    SPORT
+    HACTH
 
 }
