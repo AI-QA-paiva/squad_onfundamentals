@@ -15,7 +15,7 @@ public class ConfigurationASingleton {
     public static ConfigurationASingleton getInstance() {
         if (instance == null) {
             //se existir uma instancia ativa, não ira criar outra
-            // Sincronização para garantir que apenas uma instância seja criada em ambientes multithread
+            // se não existir, faz uma Sincronização para garantir que apenas uma instância seja criada em ambientes multithread
             synchronized (ConfigurationASingleton.class) {
                 if (instance == null) {
                     instance = new ConfigurationASingleton();

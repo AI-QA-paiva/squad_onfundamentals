@@ -41,7 +41,7 @@ public class Calculadora {
     public BigDecimal dividir(BigDecimal valor1, BigDecimal valor2) {
 
         try {
-            BigDecimal dividir = valor1.divide(valor2);
+            BigDecimal dividir = valor1.divide(valor2,5, BigDecimal.ROUND_HALF_UP);
             System.out.println("A divisão é igual a = " + dividir);
             return dividir;
         } catch (ArithmeticException e) {
@@ -51,5 +51,22 @@ public class Calculadora {
             return null;
         }
     }
+
+    public String identificarOperacaoEsolhida(int operacao) {
+        switch (operacao) {
+            case 1:
+                return "Somar: ";
+            case 2:
+                return "Subtrair: ";
+            case 3:
+                return "Multiplicar: ";
+            case 4:
+                return "Dividir: ";
+            default:
+                return "Opção  Invalida! Por gentileza, verifique qual operação deseja realizar";
+        }
+    }
+
+
 
 }

@@ -7,7 +7,6 @@ public class SedanBody extends CarBodyType {
         super(carBrand, carModel, carBodyType, projectNumber);
     }
 
-
     @Override
     public void manufactureBodywork() {
         System.out.println("\nDimensões da carroceria SEDAN: \nComprimento: 4,5m <> Largura: 1,75m <>Altura: 1,55m");

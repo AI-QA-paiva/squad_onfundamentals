@@ -19,8 +19,8 @@ public class CarBodyMain {
                 carBodyType.carPainting();
                 carBodyType.showCarBodyType();
                 break;
-            case "HACTH":
-                carBodyType = CarBodyFactoryMethod.createCarBody(BodyType.HACTH, "Fiat", "Palio", "1001");
+            case "HATCH":
+                carBodyType = CarBodyFactoryMethod.createCarBody(BodyType.HATCH, "Fiat", "Palio", "1001");
                 carBodyType.manufactureBodywork();
                 carBodyType.bodyAssembly();
                 carBodyType.carPainting();

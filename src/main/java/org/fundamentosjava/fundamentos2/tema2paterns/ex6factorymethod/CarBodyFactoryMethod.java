@@ -10,7 +10,7 @@ public class CarBodyFactoryMethod {
             case SEDAN:
                 carBodyType = new SedanBody(carBrand, carModel, carTypeBody, projectNumber);
                 break;
-            case HACTH:
+            case HATCH:
                 carBodyType = new HatchBody(carBrand, carModel, carTypeBody, projectNumber);
                 break;
             default:
